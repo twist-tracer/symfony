@@ -1,0 +1,4 @@
+argument-resolver:
+    path: /argument-resolver
+    controller: App\ArgumentResolver\Controller::index
+    methods: GET
