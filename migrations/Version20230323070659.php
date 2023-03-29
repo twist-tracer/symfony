@@ -22,10 +22,10 @@ final class Version20230323070659 extends AbstractMigration
     public function down(Schema $schema): void
     {
         // this down() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE product DROP CONSTRAINT FK_D34A04AD12469DE2');
-        $this->addSql('DROP SEQUENCE category_id_seq CASCADE');
-        $this->addSql('DROP TABLE category');
         $this->addSql('DROP INDEX IDX_D34A04AD12469DE2');
+        $this->addSql('ALTER TABLE product DROP CONSTRAINT FK_D34A04AD12469DE2');
         $this->addSql('ALTER TABLE product DROP category_id');
+        $this->addSql('DROP TABLE category');
+        $this->addSql('DROP SEQUENCE category_id_seq CASCADE');
     }
 }
