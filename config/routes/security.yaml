@@ -1,0 +1,14 @@
+security_public:
+    path: /unsafety/public
+    controller: App\Security\Controller::public
+    methods: GET
+
+security_user:
+    path: /security/user
+    controller: App\Security\Controller::user
+    methods: GET
+
+security_admin:
+    path: /security/admin
+    controller: App\Security\Controller::admin
+    methods: GET
